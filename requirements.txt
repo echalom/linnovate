@@ -1,0 +1,7 @@
+torch
+transformers
+moviepy
+psycopg2
+pgvector
+git+https://github.com/openai/whisper.git
+numpy
