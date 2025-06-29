@@ -8,7 +8,8 @@ def main():
     llm = LLMClient()
     processor = VideoProcessor()
 
-    video_path = "sample.mp4"
+    # video_path = "sample.mp4"
+    video_path = "sample2.mp4"
     video_id = "demo_video_001"
 
     print("🟩 Extracting audio...")
