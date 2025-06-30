@@ -4,10 +4,15 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-# Install ffmpeg and git (fixes whisper install issue)
-RUN apt-get update && apt-get install -y ffmpeg git && \
+# Install ffmpeg, git, and system libraries required by moviepy
+RUN apt-get update && apt-get install -y \
+    ffmpeg \
+    git \
+    libsm6 \
+    libxext6 \
+    libgl1 && \
     pip install --no-cache-dir -r requirements.txt
 
 COPY app/ ./app/
 
-CMD ["python", "app/main.py"]
+CMD ["python", "main.py"]
