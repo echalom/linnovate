@@ -1,6 +1,6 @@
 torch
 transformers
-moviepy
+moviepy[all]
 psycopg2-binary
 pgvector
 git+https://github.com/openai/whisper.git
