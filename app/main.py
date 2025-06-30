@@ -1,7 +1,7 @@
 import os
-from app.database.db_manager import DBManager
-from app.llm.llm_client import LLMClient
-from app.processors.video_processor import VideoProcessor
+from database.db_manager import DBManager
+from llm.llm_client import LLMClient
+from processors.video_processor import VideoProcessor
 
 def main():
     db = DBManager(user="postgres", password="postgres", db="videos", host="postgres")
