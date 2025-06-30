@@ -12,9 +12,12 @@ def main():
     processor = VideoProcessor()
     print(" here 4\n", flush=True)
 
-    # video_path = "sample.mp4"
-    # video_path = "sample2.mp4"
-    video_path = "../sample2.mp4"
+    # video_path = "../sample.mp4"
+    # video_path = "../sample2.mp4"
+    video_path = "../sample5.mp4"
+    # video_path = "../sample_6.mp4"
+    # video_path = "../sample_7.mp4"
+    # video_path = "../sample_8.mp4"
     video_id = "demo_video_001"
 
     print("🟩 Extracting audio...")
