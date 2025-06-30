@@ -4,12 +4,17 @@ from llm.llm_client import LLMClient
 from processors.video_processor import VideoProcessor
 
 def main():
+    print(" here 1\n", flush=True)
     db = DBManager(user="postgres", password="postgres", db="videos", host="postgres")
+    print(" here 2\n", flush=True)
     llm = LLMClient()
+    print(" here 3\n", flush=True)
     processor = VideoProcessor()
+    print(" here 4\n", flush=True)
 
     # video_path = "sample.mp4"
-    video_path = "sample2.mp4"
+    # video_path = "sample2.mp4"
+    video_path = "../sample2.mp4"
     video_id = "demo_video_001"
 
     print("🟩 Extracting audio...")

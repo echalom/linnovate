@@ -17,12 +17,12 @@ RUN apt-get update && apt-get install -y \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY app/ ./app/
-RUN ls -lh /app/app
-RUN ls -lh /app/
-COPY sample2.mp4 ./app/sample2.mp4
-RUN ls -lh /app/app
-RUN ls -lh /app/
-COPY sample2.mp4 ./app/app/sample2.mp4
-RUN ls -lh /app/app
-RUN ls -lh /app/
+# RUN ls -lh /app/app
+# RUN ls -lh /app/
+# COPY sample2.mp4 ./app/sample2.mp4
+# RUN ls -lh /app/app
+# RUN ls -lh /app/
+# COPY sample2.mp4 ./app/app/sample2.mp4
+# RUN ls -lh /app/app
+# RUN ls -lh /app/
 CMD ["python", "app/main.py"]
