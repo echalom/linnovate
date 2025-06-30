@@ -15,5 +15,18 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./init_pgvector.sql:/docker-entrypoint-initdb.d/init_pgvector.sql
 
+  app:
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: videos
+      POSTGRES_HOST: postgres
+    volumes:
+      - .:/app
+    command: ["python", "app/main.py"]
+
 volumes:
   postgres_data:
