@@ -17,7 +17,7 @@ def main():
     print("✅ Video Processor ready.\n", flush=True)
 
     # Set the video file you want to process
-    video_path = "../sample_8.mp4"
+    video_path = "sample_8.mp4"
     video_id = "demo_video_001"
 
     print("🟩 Extracting audio transcript...\n", flush=True)
