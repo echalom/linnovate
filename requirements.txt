@@ -1,7 +1,33 @@
+# Core Python packages
+numpy
+pandas
+
+# Machine Learning and LLM Embeddings
 torch
 transformers
-moviepy[all]
-psycopg2-binary
-pgvector
-git+https://github.com/openai/whisper.git
-numpy
+sentence-transformers
+
+# Video and Audio Processing
+moviepy[all]            # for reading and slicing videos
+openai-whisper                 # for OpenAI Whisper audio transcription
+scenedetect[opencv]
+
+# Database and Vector DB
+psycopg2-binary         # PostgreSQL client
+pgvector                # for PGVector support in PostgreSQL
+
+# Image Processing (for BLIP)
+Pillow
+opencv-python-headless  # for frame extraction without GUI conflicts
+
+# OpenAI API client (if using GPT embeddings or LLM)
+openai
+
+# Utilities
+tqdm                    # progress bars
+python-dotenv           # environment variable management
+
+# Force upgrade pip tooling in Docker builds
+pip
+setuptools
+wheel
