@@ -12,17 +12,18 @@ RUN apt-get update && apt-get install -y \
     libgl1 \
     build-essential \
     python3-dev \
+    wget \
+    unzip \
  && pip install --upgrade pip wheel setuptools \
  && pip install --no-cache-dir -r requirements.txt \
+ # Download and unzip Vosk model
+ && wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip \
+ && unzip vosk-model-small-en-us-0.15.zip \
+ && mv vosk-model-small-en-us-0.15 vosk-model \
+ && rm vosk-model-small-en-us-0.15.zip \
+ # Clean up
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY app/ ./app/
-# RUN ls -lh /app/app
-# RUN ls -lh /app/
-# COPY sample2.mp4 ./app/sample2.mp4
-# RUN ls -lh /app/app
-# RUN ls -lh /app/
-# COPY sample2.mp4 ./app/app/sample2.mp4
-# RUN ls -lh /app/app
-# RUN ls -lh /app/
+
 CMD ["python", "app/main.py"]

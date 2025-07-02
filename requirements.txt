@@ -9,7 +9,9 @@ sentence-transformers
 
 # Video and Audio Processing
 moviepy[all]            # for reading and slicing videos
-openai-whisper                 # for OpenAI Whisper audio transcription
+vosk
+soundfile
+# openai-whisper                 # for OpenAI Whisper audio transcription
 scenedetect[opencv]
 
 # Database and Vector DB
