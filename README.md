@@ -1,5 +1,8 @@
 # 🎥 Video Processor with LLM-Based Highlight Extraction
 
+## Before we start
+Before starting, please read the submission document with some background and explanations called EdmondChalom_submission_070325.docx, sent separately by e-mail.
+
 ## Overview
 
 This project:
