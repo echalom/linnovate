@@ -15,6 +15,7 @@ This project:
 
 ## Running in GitHub Codespaces or gitpod
 
+Before running, please make sure you read the file EdmondChalom_submission_070325.docx
 1️⃣ Push this repository to your GitHub.  
 2️⃣ Open in Codespaces or gitpod (tested only on gitpod).  
 3️⃣ Ensure the mp4 files are in the root of the repository.  
